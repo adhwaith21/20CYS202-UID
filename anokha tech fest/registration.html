@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>   
+    <head>
+        <title>Registration for Anokha Techfest</title>
+    </head> 
+<form>
+    <img src="Screenshot 2022-11-14 110804.png" class="image">
+    <br>
+    <fieldset>
+    <div class="container">
+      <h1>Register</h1>
+      <p>Kindly fill in this form to register.</p>
+      <label for="username"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter username"
+        name="username"
+        id="username"
+        required
+      />
+
+      <label for="email"><b>Email</b></label>
+      <input
+        type="text"
+        placeholder="Enter Email"
+        name="email"
+        id="email"
+        required
+      />
+
+      <label for="pwd"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="pwd"
+        id="pwd"
+        required
+      />
+
+      <label for="pwd-repeat"><b>Repeat Password</b></label>
+      <input
+        type="password"
+        placeholder="Repeat Password"
+        name="pwd-repeat"
+        id="pwd-repeat"
+        required
+      />
+      <button type="submit" value="thanks.html">Register</button>
+    </div>
+    </fieldset>
+</form>
+<style>
+      body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color:beige;
+      }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
+
+h1, p {
+  text-align: center;
+}
+
+input {
+  margin: 0.25em 0em 1em 0em;
+}
+
+input {
+  margin: 0.25em 0em 1em 0em;
+  outline: none;
+  padding: 0.5em;
+  border: none;
+  background-color: rgb(225, 225, 225);
+  border-radius: 0.25em;
+  color: black;
+}
+
+button {
+  padding: 0.75em;
+  border: none;
+  outline: none;
+  background-color: rgb(68, 18, 232);
+  color: white;
+  border-radius: 0.25em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(41, 4, 164);
+}
+
+.image{
+    height: 100px;
+}
+
+</style>
+
+</html>
