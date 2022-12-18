@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {
+background-size: cover;
+background: linear-gradient(#141e30,#243b55);}
+h1 {
+  text-align: center;
+  margin: 20px auto;
+  color:white;
+}
+form {
+  width: 70%;
+  margin: auto;
+}
+fieldset {
+  padding: 20px;
+  border: 7px solid black;
+  border-radius: 20px;
+  margin: 40px auto;
+  box-shadow: 0 0 5px #333;
+  background-color: lightslategrey;
+}
+label {
+  display: block;
+  
+  margin-bottom: 10px;
+}
+
+input[type="radio"]{
+    margin-bottom:20px ;
+}
+input[type="text"],input[type="email"],select{
+  width: calc(100% - 20px);
+  height: 20px;
+  padding: -5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+select{
+  width: calc(100% - 20px);
+  height: 25px;
+  padding: 0px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+</style>
+<style>
+
+.topnav {
+  overflow: hidden;
+  background-color:#060605;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: orange;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: orange;
+  color: white;
+}
+.logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .logo img {
+        width: 180px;
+        border-radius: 50px;
+    }
+</style>
+<script>
+function admSelectCheck(nameSelect)
+{
+    if(nameSelect){
+        admOptionValue = document.getElementById("admOption").value;
+        if(admOptionValue == nameSelect.value){
+            document.getElementById("admDivCheck").style.display = "block";
+        }
+        else{
+            document.getElementById("admDivCheck").style.display = "none";
+        }
+    }
+    else{
+        document.getElementById("admDivCheck").style.display = "none";
+    }
+}
+</script>
+</head>
+<div class="topnav">
+  <a class="active" href="../index.html">Register</a>
+  <a href="About.html">About</a>
+</div>
+
+  <title>Register.</title>
+  <div id="event-registration">
+    <h1 style="color: orange; margin-top:20px;"><b>Anokha Tech Fest 2023</b></h1>
+    <form id="event-registration-form" method="POST" action="">
+      <fieldset>
+        <h2>Info Corner</h2>
+        <label for="first-name"><b>First Name</b></label>
+        <input type="text" id="first-name" name="first-name" />
+        <label for="last-name"><b>Last Name</b></label>
+        <input type="text" id="last-name" name="last-name" />
+        <label for="email"><b>Email</b></label>
+        <input type="email" id="email" name="email" />
+        <label for="unit"><b>College</b></label>
+        <input type="text" id="unit" name="unit" />
+        <label for="gender" style="margin-top: 30px;"><b>Gender</b></label>
+        <input type="radio" name="Male" value="Male"/>Male 
+        <input type="radio" name="Female" value="Female"/>Female
+        <div>      
+</select>  
+<label>   
+<b>Branch</b>  
+</label>   
+<div>    
+    <select name="organisation" class="form-control" id="getFname" onchange="admSelectCheck(this);">  
+    <option value="CSE">CSE</option>  
+    <option value="CYS">CYS</option>  
+    <option value="AI">AI</option>  
+    <option value="MECH">MECH</option>  
+    <option value="ECE">ECE</option>  
+    <option value="ELC">ELC</option>  
+    <option id="admOption" value="0">Others</option>
+    </select>  
+    <div class="form-group" id="admDivCheck" style="display: none; padding: -10px;">
+        <input type="text" name="organisation" class="form-control" placeholder="" />
+    </div>  
+        <label for="city"><b>Mobile Number</b></label>
+        <input type="text" id="city" name="city" />
+        <label for="state"></label>
+        <button type="submit">Submit Form</button>
+      </fieldset>
+  </div>
+</head>
+
+<body>
+</body>
+
+</html>
