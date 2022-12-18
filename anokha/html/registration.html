@@ -15,13 +15,13 @@ h1 {
 form {
   width: 70%;
   margin: auto;
-  top: 50px;
 }
 fieldset {
   padding: 20px;
   border: 7px solid black;
   border-radius: 20px;
-  margin: 40px auto;
+  top: -80px;
+  margin: 120px 100px;
   box-shadow: 0 0 5px #333;
   background-color: lightslategrey;
 }
@@ -72,7 +72,7 @@ button {
               margin: 0 auto;
               padding: 13px 0;
               position: absolute;
-              top: 120px;
+              top: 80px;
               left: 30px;
               right: 30px;
               border-radius: 50px;
@@ -120,17 +120,16 @@ function admSelectCheck(nameSelect)
 </script>
 </head>
 <div class="topnav">
-  <a class="nothing" style="font-size:30px">Register!!</a>
-  <a class="active" href="../index.html">Home</a>
-  <a href="About.html">About</a>
+  <a class="active" href="../index.html" style="color: orange;">Home</a>
+  <a href="About.html" style="color: orange;">About</a>
 </div>
 
   <title>Register..</title>
   <div id="event-registration">
-    <h1 style="color: white;margin-top:20px;"><b>Anokha Tech Fest 2023</b></h1>
+    <h1 style="margin-top:20px;color: orange;"><b>Anokha Tech Fest 2023 - Registration Form</b></h1>
     <form id="event-registration-form" method="POST" action="">
-      <fieldset>
-        <h2>Info Corner</h2>
+      <fieldset >
+        <h2 style="color:black;">Info Corner</h2>
         <label for="first-name"><b>First Name</b></label>
         <input type="text" id="first-name" name="first-name" />
         <label for="last-name"><b>Last Name</b></label>
@@ -141,7 +140,7 @@ function admSelectCheck(nameSelect)
         <input type="text" id="unit" name="unit" />
         <label for="gender" style="margin-top: 30px;"><b>Gender</b></label>
         <input type="radio" name="Male" value="Male"/>Male 
-        <input type="radio" name="Female" value="Female"/>Female
+        <input type="radio" name="Male" value="Female"/>Female
         <div>      
 </select>  
 <label>   
