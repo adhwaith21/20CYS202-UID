@@ -4,41 +4,60 @@
         <title>About Amrita Vishwa Vidyapeetham</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../images/download.png">
-        <style>
-            *{
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-              font-family: 'Poppins', sans-serif;
-            }
-            body{
-              position: relative;
-              min-height:100vh;
-              display:flex;
-              flex-direction:column;  
-            }
-            .hero{
-              height: 100vh;
-              width: 100%;
-              background: white;
-              background-image: url("../images/amrita-vishwa-vidyapeetham-coimbatore-campus-dron-image-01-2.jpg");
-              background-repeat: no-repeat;
-              background-size:contain;
-              margin-top:-10px;
-            }
-
-            nav{
+    </head>
+<body>
+      <img src="../images/amrita-vishwa-vidyapeetham-coimbatore-campus-dron-image-01-2.png" style=" background-repeat: no-repeat; background-size: auto; background-size: auto; margin-left: -10px; margin-top: -10px;">  
+      <div class="hero">
+         <header>
+           <nav>
+             <h2 class="logo" style="color:black; left:90%; font-size:x-large;">About us</h2>
+             <ul>
+               <li><a href="../index.html" style="color:black">Home</a></li>
+               <li><a href="../html/contact.html" style="color:black">Contact</a></li>
+               <li><a href="../html/registration.html" style="color:black">Book now</a>
+               <li><a href="../html/events.html" style="color:black" target="_blank">Events</a></li>
+             </ul>
+           </nav>
+         </header>
+     </div>
+   <div class="content">
+      <h1 style="color: #a7214a; margin-left: 520px;"><b>About Us</b></h1>
+      <p style="font-size: large; padding-left: 20px;color: black;">"Amrita Vishwa Vidyapeetham is a multi-disciplinary,research-intensive,private university,educating a vibrant student population of over 24,000 by 1700+ strong faculty.Accredited with the highest possible ‘A++’ grade by NAAC, Amrita offers more than 250 UG, PG, and Ph.D. programs in Management,<br>and Medical Sciences including Ayurveda, Life Sciences, Physical Sciences, Agriculture Sciences,Arts & Humanities, and Social & Behavioral Sciences.
+        <br>With seven campuses at Amaravati, Amritapuri, Bengaluru, Chennai, Coimbatore, Kochi, and Mysuru and a new upcoming campus at NCR Delhi (Faridabad) and spread over 1200+ acres with 100 lacs square feet of built-up space.Amrita is one of India’s top-ranked private university."  
+        <br><br><br>
+        <img src="../images/amrita-vishwa-image-2.jpg" class="image" style="margin-left: 26%; width: 50%;">
+        <br><br>
+        <p style="padding-left: 10px; font-size: large;color: black;">Amrita has emerged as the fifth best university in the National Institutional Ranking Framework (NIRF) Rankings 2022. Amrita School of Medicine, Kochi has been ranked 8th Best in Medicine in NIRF Rankings 2022.
+        In THE University Impact Rankings 2022, a pioneering initiative to recognise universities around the world for their social and economic impact for sustainable future, Amrita has been ranked among the Top 50 in the world.
+        In a short span of 18 years, we have established 180+ collaborations with Top 500 world-ranked universities as Amrita is emerging as one of the fastest-growing institutions of higher learning in India
+        World-renowned humanitarian leader, Sri Mata Amritanandamayi Devi, AMMA, is the founding Chancellor and guiding light of Amrita Vishwa Vidyapeetham.</p>
+        <br>
+        <br>
+        <img src="../images/Banner-1384-Mys.jpg" class="image" style="margin-left: 26%; width: 50%;color: black;">
+        <br>
+        <br>
+        <p style="padding-left: 10px; font-size: large;color: black;">Our vision is to be an exemplary institution that thrives on its commitment to the transformative power of value-based education, providing the impetus to develop the expansiveness to harmonize both scientific knowledge and spiritual understanding, so as to utilize knowledge for societal benefit and contribute to a prosperous and sustainable future for all.</p> <br> 
+        <img src="../images/Amrita_student.jpg" class="image" style=" width: 100%;color: black;">
+      </div>
+<style>
+   body{
+      color: whitesmoke;
+   }
+   nav{
               display: flex;
               align-items: center;
               justify-content: space-between;
               padding-right: 2%;
               padding-left: 2%;
+              padding-top: 0px;
+              height: 38px;
             }
             .logo{
               color: #262728;
-              font-size: 35px;
-              letter-spacing: 1px;
+              font-size: 55px;
+              letter-spacing: 2px;
               cursor: pointer;
+              margin-left: 10px;
             }
             nav ul{
               flex: 1;
@@ -74,340 +93,33 @@
               background:#262728;
               color: white;
               transition: .3s;
-            }
-             header{
-              width: 92%;
-              margin: 0 auto;
-              padding: 13px 0;
-              position: absolute;
-              top: 40px;
-              left: 30px;
-              right: 30px;
-              border-radius: 50px;
-              z-index: 2;
-              background: black;
-              box-shadow: 0 0 30px rgb(0 0 0 / 8%);
-            }
-            .bg{
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 45%;
-              height: 100%;
-              overflow: hidden;
-            }
-            .content{
-              position: absolute;
-              transform: translateY(-50%);
-            }
-            .content h1{
-              left:50%;
-              font-size: 30px;
-              color: #d00046;
-              line-height: 100px;
-            }
-            .content h3{
-              color: #00bf9f;
-              font-size: 35px;
-              letter-spacing: 1px;
-            }
-            .content p{
-              font-size: 20px;
-              color: #585858;
-              line-height: 28px;
-            }
-            button{
-              background: #262728;
-              border: 2px solid transparent;
-              padding: 10px 32px;
-              border-radius: 30px;
-              outline: none;
-              border: none;
-              color: white;
-              font-size: 14px;
-              font-weight: bold;
-              letter-spacing: 1px;
-            }
-            button:hover{
-              transform: scale(1.2);
-              transition: .3s;
-              cursor: pointer;
-            }
-            .social{
-              position: absolute;
-              right: 72px;
-              bottom: 40px;
-            }
-            .social ul li{
-              list-style: none;
-              text-align: center;
-              margin-top: 15px;
-            }
-            .social ul li a{
-              color: #262728;
-              display: block;
-              font-size: 23px;
-            }
-            .social ul li a:hover{
-              transform: scale(1.2) translateY(-5px);
-              transition: .3s;
-              cursor: pointer;
-            }
-            
-            .image{
-              display: block;
-              margin-left: -150px;
-              margin-right: auto;
-              width: 50%;
-            }
-        </style>
-    </head>
- <body>
-        <div class="hero">
-            <header>
-              <nav>
-                <h2 class="logo" style="color:white; left:90%; font-size: large;">About us</h2>
-                <ul>
-                  <li><a href="../index.html" style="color:white">Home</a></li>
-                  <li><a href="../html/contact.html" style="color:white">Contact</a></li>
-                  <li><a href="../html/registration.html" style="color:white">Book now</a>
-                  <li><a href="../html/events.html" style="color:white" target="_blank">Events</a></li>
-                </ul>
-              </nav>
-            </header>
-        </div>
-           
-        
-            <div class="content">
-              <h1 style="text-align: center;margin-left: 100px; font-size: xx-large; margin-top:1000px;"><b>About Us</b></h1>
-              <p style="margin-left: 100px; margin-top:1000px">"Amrita Vishwa Vidyapeetham is a multi-disciplinary, research-intensive, private university, educating a vibrant student population of over 24,000 by 1700+ strong faculty. Accredited with the highest possible ‘A++’ grade by NAAC, Amrita offers more than 250 UG, PG, and Ph.D. programs in Engineering, Management, and Medical Sciences including Ayurveda, Life Sciences, Physical Sciences, Agriculture Sciences, Arts & Humanities, and Social & Behavioral Sciences.
-                With seven campuses at Amaravati, Amritapuri, Bengaluru, Chennai, Coimbatore, Kochi, and Mysuru and a new upcoming campus at NCR Delhi (Faridabad) and spread over 1200+ acres with 100 lacs square feet of built-up space, Amrita is one of India’s top-ranked private university.</p>  
-              <p  style="margin-left: 300px;margin-top:1000px;">Amrita has emerged as the fifth best university in the National Institutional Ranking Framework (NIRF) Rankings 2022. Amrita School of Medicine, Kochi has been ranked 8th Best in Medicine in NIRF Rankings 2022.
-                In THE University Impact Rankings 2022, a pioneering initiative to recognise universities around the world for their social and economic impact for sustainable future, Amrita has been ranked among the Top 50 in the world.
-                In a short span of 18 years, we have established 180+ collaborations with Top 500 world-ranked universities as Amrita is emerging as one of the fastest-growing institutions of higher learning in India
-                World-renowned humanitarian leader, Sri Mata Amritanandamayi Devi, AMMA, is the founding Chancellor and guiding light of Amrita Vishwa Vidyapeetham.</p>
-                <br>
-                <img src="../images/790-2021-08-06T181204.605-768x380.jpg" class="image">
-                <br>
-                <br>
-                <p style="margin-left: -400px;margin-top:500px;">Our vision is to be an exemplary institution that thrives on its commitment to the transformative power of value-based education, providing the impetus to develop the expansiveness to harmonize both scientific knowledge and spiritual understanding, so as to utilize knowledge for societal benefit and contribute to a prosperous and sustainable future for all.</p> <br> <br> <br> <br> <br> <br> <br> <br>
-            </div>
- <!-- Site footer -->
-    <footer class="site-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <img src="../images/logo-colored.svg" style="width: 200px;">
-                <p class="text-justify" style="margin: 10px;">Life and living are not the same. For living, we may <br> need a job, money, a home, a car and other creature <br> comforts. However, these alone fail to make life <br> complete. For that, we need love, compassion, <br> tenderness — a heart that knows and responds to the <br> pain of others. We need broadmindedness and <br> maturity in thought and action.
-                  <b>- Amma</b></p>
-              </div>
-    
-              <div class="col-xs-6 col-md-3">
-                <h6 style="margin-left: 20px; margin-top: -200px; margin-left: 550px;">About Amrita</h6>
-                <ul class="footer-links" style="margin-top: 30px; margin-left: 70px;">
-                  <li><a href="#">Rankings</a></li>
-                  <li><a href="#">Accreditation</a></li>
-                  <li><a href="#">Leadership</a></li>
-                  <li><a href="#">Newsletter</a></li>
-                  <li><a href="#">Press Media</a></li>
-                  <li><a href="#">Governance</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-xs-6 col-md-3" style="margin-left: 300px;">
-                <h6 style="margin-left: 480px; margin-top: -150px;">Quick Links</h6>
-                <ul class="footer-links">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Contribute</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Sitemap</a></li>
-                </ul>
-              </div>
-            </div>
-            <hr>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text" style="margin-top: 100px; margin-left: 420px;">Copyright © 2022-2023 Anokha - Adhwaith.
-    II B.Tech CSE (CYS)    Part of 20CYS202 - User Interface Design
-    Amrita Vishwa Vidyapeetham, Coimbatore 
-                </p>
-              </div>
-            </div>
-          </div>
-  </footer>
-    <style>
-   .site-footer
-    {
-      background-color:#26272b;
-      padding:45px 0 20px;
-      font-size:15px;
-      line-height:20px;
-      color:#737373;
-      margin-top:700px;
-    }
-    .site-footer hr
-    {
-      border-top-color:#bbb;
-      opacity:0.5
-    }
-    .site-footer hr.small
-    {
-      margin:20px 0
-    }
-    .site-footer h6
-    {
-      color:#fff;
-      font-size:16px;
-      text-transform:uppercase;
-      margin-top:5px;
-      letter-spacing:2px
-    }
-    .site-footer a
-    {
-      color:#737373;
-    }
-    .site-footer a:hover
-    {
-      color:#3366cc;
-      text-decoration:none;
-    }
-    .footer-links
-    {
-      padding-left:500px;
-      list-style:none
-    }
-    .footer-links li
-    {
-      display:block
-    }
-    .footer-links a
-    {
-      color:#737373
-    }
-    .footer-links a:active,.footer-links a:focus,.footer-links a:hover
-    {
-      color:#3366cc;
-      text-decoration:none;
-    }
-    .footer-links.inline li
-    {
-      display:inline-block
-    }
-    .site-footer .social-icons
-    {
-      text-align:right
-    }
-    .site-footer .social-icons a
-    {
-      width:40px;
-      height:40px;
-      line-height:40px;
-      margin-left:6px;
-      margin-right:0;
-      border-radius:100%;
-      background-color:#33353d
-    }
-    .copyright-text
-    {
-      margin:0
-    }
-    @media (max-width:991px)
-    {
-      .site-footer [class^=col-]
-      {
-        margin-bottom:30px
-      }
-    }
-    @media (max-width:767px)
-    {
-      .site-footer
-      {
-        padding-bottom:0
-      }
-      .site-footer .copyright-text,.site-footer .social-icons
-      {
-        text-align:center
-      }
-    }
-    .social-icons
-    {
-      padding-left:0;
-      margin-bottom:0;
-      list-style:none
-    }
-    .social-icons li
-    {
-      display:inline-block;
-      margin-bottom:4px
-    }
-    .social-icons li.title
-    {
-      margin-right:15px;
-      text-transform:uppercase;
-      color:#96a2b2;
-      font-weight:700;
-      font-size:13px
-    }
-    .social-icons a{
-      background-color:#eceeef;
-      color:#818a91;
-      font-size:16px;
-      display:inline-block;
-      line-height:44px;
-      width:44px;
-      height:44px;
-      text-align:center;
-      margin-right:8px;
-      border-radius:100%;
-      -webkit-transition:all .2s linear;
-      -o-transition:all .2s linear;
-      transition:all .2s linear
-    }
-    .social-icons a:active,.social-icons a:focus,.social-icons a:hover
-    {
-      color:#fff;
-      background-color:#29aafe
-    }
-    .social-icons.size-sm a
-    {
-      line-height:34px;
-      height:34px;
-      width:34px;
-      font-size:14px
-    }
-    .social-icons a.facebook:hover
-    {
-      background-color:#3b5998
-    }
-    .social-icons a.twitter:hover
-    {
-      background-color:#00aced
-    }
-    .social-icons a.linkedin:hover
-    {
-      background-color:#007bb6
-    }
-    .social-icons a.dribbble:hover
-    {
-      background-color:#ea4c89
-    }
-    @media (max-width:767px)
-    {
-      .social-icons li.title
-      {
-        display:block;
-        margin-right:0;
-        font-weight:600
-      }
-    }
-      .site-footer p{
-  padding-left: 0%;
-   font-weight: bold;
-  font-size: large;
+   }
+   header{
+            width: 92%;
+            margin: 0 auto;
+            padding: 13px 0;
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            right: 30px;
+            border-radius: 50px;
+            z-index: 2;
+            background: #d00046;
+            box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+   }
+</style>
+<footer>
+   <div class="container">
+     <p>Copyright &copy; 2023 Anokha - Adwaith. II B.Tech CSE (CYS)<br> Part of 20CYS202 - User Interface Design <br> Amrita Vishwa Vidyapeetham, Coimbatore Amrita</p>
+   </div>
+ </footer>
+<style>
+footer {
+  background-color: #d00046;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
-    </style>        
-    </body>
-</html>
+</style>
+</body>
+</html>    
